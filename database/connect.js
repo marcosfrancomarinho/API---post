@@ -7,4 +7,8 @@ const sequelize = new Sequelize({
     username: process.env.USER,
     dialect: "postgres"
 })
+
+sequelize.authenticate()
+    .then(() => console.log("conectado"))
+    .catch(error => console.log(error))
 module.exports = { sequelize, DataTypes }
