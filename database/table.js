@@ -5,7 +5,7 @@ const post = sequelize.define("post", {
         type: DataTypes.STRING
     },
     description: {
-        type: DataTypes.STRING
+        type: DataTypes.TEXT
     }
 })
 module.exports = post
